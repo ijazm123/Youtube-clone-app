@@ -57,7 +57,7 @@ pipeline{
             steps{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
-                       sh "docker build --build-arg REACT_APP_RAPID_API_KEY=f0ead79813ms -t youtube ."
+                       sh "docker build --build-arg REACT_APP_RAPID_API_KEY=e1dc838e1emsh58603bf482c0227p1c4ce2jsne027350c42f7 -t youtube ."
                        sh "docker tag youtube sevenajay/youtube:latest "
                        sh "docker push sevenajay/youtube:latest "
                     }
